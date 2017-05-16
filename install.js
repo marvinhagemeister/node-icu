@@ -1,6 +1,7 @@
 const http = require("https");
 const path = require("path");
 const fs = require("fs");
+const os = require("os");
 const tar = require("tar");
 const rimraf = require("rimraf");
 
@@ -16,7 +17,7 @@ const icumaj = icu.split(".")[0];
 
 const icuend = process.config.variables.icu_endiannes !== undefined
   ? process.config.variables.icu_endiannes.toLowerCase()
-  : "l";
+  : os.endianness()[0].toLowerCase();
 
 if (!/^(l|b|e)$/.test(icuend)) {
   throw Error(
