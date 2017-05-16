@@ -22,6 +22,13 @@ Example:
 node --icu-data-dir=/absolut/path/to/node_modules/node-icu myapp.js
 ```
 
+To test if everything is working, run this:
+
+```js
+// should return "enero" instead of "January"
+new Intl.DateTimeFormat('es',{month:'long'}).format(new Date(9E8));
+```
+
 ## License
 
 `MIT` see [License](License.md);
