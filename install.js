@@ -50,19 +50,6 @@ function download(url, dest) {
   });
 }
 
-download(url, dest)
-  .then(() => {
-    console.log("Node will use this ICU datafile if the environment variable "
-    + "NODE_ICU_DATA is set to point to “" + __dirname + "”")
-    console.log();
-    console.log("By the way, if you have full data, running this in node:");
-    console.log(
-      "> new Intl.DateTimeFormat('es',{month:'long'}).format(new Date(9E8));"
-    );
-    console.log(
-      "... will show “enero”. If it shows “January” you don't have full data."
-    );
-  })
-  .catch(err => {
-    throw err;
-  });
+download(url, dest).catch(err => {
+  throw err;
+});
