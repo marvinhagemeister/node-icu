@@ -19,7 +19,7 @@ To use the icu data, start node with the `--icu-data-dir` option or set the
 Example:
 
 ```bash
-node --icu-data-dir=/absolut/path/to/node_modules/node-icu myapp.js
+node --icu-data-dir=node_modules/node-icu myapp.js
 ```
 
 To test if everything is working, run this:
