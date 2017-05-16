@@ -31,4 +31,4 @@ new Intl.DateTimeFormat('es',{month:'long'}).format(new Date(9E8));
 
 ## License
 
-`MIT` see [License](License.md);
+`MIT` see [License](License.md).
