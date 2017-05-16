@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Node icu package",
   "keywords": [
-    "icu", "icu4c"
+    "icu",
+    "icu4c"
   ],
   "main": "index.js",
   "engines": {
@@ -17,5 +18,9 @@
     "install": "node install.js"
   },
   "author": "Marvin Hagemeister <marvin@marvinhagemeister.de>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "rimraf": "^2.6.1",
+    "tar": "^3.1.3"
+  }
 }
