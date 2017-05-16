@@ -1,0 +1,14 @@
+{
+  "name": "node-icu",
+  "version": "1.0.0",
+  "description": "Node icu package",
+  "main": "index.js",
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "scripts": {
+    "install": "node install.js"
+  },
+  "author": "Marvin Hagemeister <marvin@marvinhagemeister.de>",
+  "license": "MIT"
+}
