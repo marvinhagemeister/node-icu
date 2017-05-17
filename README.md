@@ -1,5 +1,7 @@
 # Node ICU
 
+**NOTE: This package is not necessary anymore, because [full-icu](https://github.com/unicode-org/full-icu-npm) just released an updated version with support for yarn. Please use that one instead.**
+
 Downloads the correct icu `.dat` file for your cpu-architecture and node
 version.
 
